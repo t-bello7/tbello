@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+    @apply py-24 md:py-32 lg:py-10
+}
+.line {
+    @apply overflow-hidden;
+}
+.word {
+    @apply translate-y-full
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Paytone+One&display=swap');
+
+:root {
+  --color-blue-400: #60a5fa; 
+  --color-yellow-600: #ca8a04; 
+  --mouse-x: 0;
+  --mouse-y: 0;
+}
+
+.dark {
+  --color-blue-400: #3b82f6;
+  --color-yellow-600: #facc15;
+}
+
+.pointer {
+  transform: translate(var(--mouse-x), var(--mouse-y));
+}
+
