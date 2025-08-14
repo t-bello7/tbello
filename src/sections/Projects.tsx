@@ -1,25 +1,17 @@
 import Image from "next/image";
 import { FC } from "react";
-import {
-  checkmark,
-  colors,
-  bucket  
-} from "@/assets/icons"
 
 const info = [
   {
     title: "Proven Excellence & Reliability",
-    icon: checkmark,
     text: "We’ve built a reputation for consistent, high-quality service delivery. Our experienced team follows standardized protocols and uses the latest tools and eco-friendly products to ensure every task meets the highest standards—on time, every time."
   },
   {
     title: "Comprehensive Solutions",
-    icon: colors,
     text: "Whether it’s routine cleaning, technical maintenance, or specialized services like pest control or space management, we provide tailored solutions to meet your facility’s exact needs. Our integrated approach saves you time, money, and stress."
   },
   {
     title: "Eco-Conscious Approach",
-    icon: bucket,
     text: "Your people’s health and the environment matter to us. That’s why we prioritize green cleaning methods, sustainable waste practices, and strict safety compliance, creating safer, healthier environments for all."
   }
 ]
@@ -44,9 +36,8 @@ const Projects: FC = () => {
          <div
       className="container max-w-[88%] flex flex-col gap-4 md:flex md:flex-row md:max-w-full lg:gap-5 justify-center">
           {
-            info.map(({icon, text, title}) => (
+            info.map(({text, title}) => (
               <div key={title} className="rounded-xl bg-white md:w-[30ch] h-[36vh] py-6 px-4 grid items-start border gap-3">
-                <Image src={icon} alt={title} />
                 <div className="space-y-2"> 
                   <span className="text-bold text-[#18181B]"> {title} </span>
                   <p className="text-[#71717A]">

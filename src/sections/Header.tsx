@@ -1,9 +1,11 @@
 "use client"
 import { FC, useState } from "react";
 import { useTheme } from "next-themes";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import gsap from 'gsap';
 import { Button } from "@/components";
+import Link from "next/link";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const navItems = [
@@ -43,7 +45,7 @@ const raysVariants = {
 
 const Header: FC = () => {
   const [openMobileMenu, setOpenMobileMenu ]= useState(false);
-
+  const currentPath = usePathname()
   const { theme, setTheme } = useTheme();
   const moonPath = 'M47 65.3333C57.1252 65.3333 65.3333 57.1252 65.3333 47C46.2642 55.9696 37.3035 48.5152 47 28.6667C36.8748 28.6667 28.6667 36.8748 28.6667 47C28.6667 57.1252 36.8748 65.3333 47 65.3333Z';
   const sunPath = "M47 65.3333C57.1252 65.3333 65.3333 57.1252 65.3333 47C65.3333 36.8748 57.1252 28.6667 47 28.6667C36.8748 28.6667 28.6667 36.8748 28.6667 47C28.6667 57.1252 36.8748 65.3333 47 65.3333Z";
@@ -52,9 +54,22 @@ const Header: FC = () => {
     <header className="z-50 w-full font-Inconsolata mt-[3vh] fixed top-0 h-[10vh]">
       <div className="container w-[95%] md:max-w-[80%] lg:max-w-[80%]">
           <div className="flex justify-between items-center w-full">
-            <div className=" text-teal-900">
-              TBELLO
-            </div>
+            {
+              currentPath === "/" ? (
+                <div className=" text-teal-900">
+                  TBELLO
+                </div>
+              ) : (
+                <Link href="/ " className="flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-[12px]" viewBox="0 0 24 24"><path d="m6 8-4 4 4 4M2 12h20"/>
+                  </svg>
+                  <span>
+                    Back
+                  </span>
+                </Link>
+              )
+            }
+          
             {/* <button className="w-4 h-4" type="button" onClick={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}>
               <motion.svg  viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
               

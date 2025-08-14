@@ -2,35 +2,27 @@
 import { FC } from "react";
 import Image from "next/image";
 import {
-  star
-} from "@/assets/icons"
-import {
   introImg
 } from "@/assets/images"
 
 const aboutItems = [
   {
-    icon: star,
     title: 'Professionalism',
     description: 'We deliver every service with accountability, consistency, and pride.'
   },
   {
-    icon: star,
     title: 'Integrity',
     description: ' We operate transparently and honestly in all our client relationships.'
   },
   {
-    icon: star,
     title: 'Customer-Centricity',
     description: 'We tailor our services to meet the unique needs of every client.'
   },
   {
-    icon: star,
     title: 'Innovation',
     description: 'We embrace technology and new methods to deliver smarter facility solutions.'
   },
   {
-    icon: star,
     title: 'Sustainability',
     description: 'We promote eco-friendly practices that reduce environmental impact.'
   }
@@ -54,7 +46,6 @@ const Intro: FC = () => {
             aboutItems.map(item => (
               <div key={item.title} className="flex gap-4">
                 <div>
-                <Image className="w-6 md:w-9 aspect-square" src={item.icon} alt={item.title} />
                 </div>
                 <div className="grid gap-1">
                   <h4 className="font-bold font-sfProDisplayBold text-sm md:text-base"> {item.title} </h4>
