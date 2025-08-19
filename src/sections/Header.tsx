@@ -1,9 +1,6 @@
 "use client"
-import { FC, useState } from "react";
-import { useTheme } from "next-themes";
+import { FC } from "react";
 import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "motion/react";
-import gsap from 'gsap';
 import { Button } from "@/components";
 import Link from "next/link";
 
@@ -27,28 +24,28 @@ const navItems = [
   },
 ];
 
-const raysVariants = {
-  hidden: {
-    strokeOpacity: 0,
-    transition: {
-      staggerChildren: 0.05,
-      staggerDirection: -1
-    }
-  },
-  visible: {
-    strokeOpacity: 1,
-    transition: {
-      staggerChildren: 0.05
-    }
-  }
-}
+// const raysVariants = {
+//   hidden: {
+//     strokeOpacity: 0,
+//     transition: {
+//       staggerChildren: 0.05,
+//       staggerDirection: -1
+//     }
+//   },
+//   visible: {
+//     strokeOpacity: 1,
+//     transition: {
+//       staggerChildren: 0.05
+//     }
+//   }
+// }
 
 const Header: FC = () => {
-  const [openMobileMenu, setOpenMobileMenu ]= useState(false);
+  // const [openMobileMenu, setOpenMobileMenu ]= useState(false);
   const currentPath = usePathname()
-  const { theme, setTheme } = useTheme();
-  const moonPath = 'M47 65.3333C57.1252 65.3333 65.3333 57.1252 65.3333 47C46.2642 55.9696 37.3035 48.5152 47 28.6667C36.8748 28.6667 28.6667 36.8748 28.6667 47C28.6667 57.1252 36.8748 65.3333 47 65.3333Z';
-  const sunPath = "M47 65.3333C57.1252 65.3333 65.3333 57.1252 65.3333 47C65.3333 36.8748 57.1252 28.6667 47 28.6667C36.8748 28.6667 28.6667 36.8748 28.6667 47C28.6667 57.1252 36.8748 65.3333 47 65.3333Z";
+  // const { theme, setTheme } = useTheme();
+  // const moonPath = 'M47 65.3333C57.1252 65.3333 65.3333 57.1252 65.3333 47C46.2642 55.9696 37.3035 48.5152 47 28.6667C36.8748 28.6667 28.6667 36.8748 28.6667 47C28.6667 57.1252 36.8748 65.3333 47 65.3333Z';
+  // const sunPath = "M47 65.3333C57.1252 65.3333 65.3333 57.1252 65.3333 47C65.3333 36.8748 57.1252 28.6667 47 28.6667C36.8748 28.6667 28.6667 36.8748 28.6667 47C28.6667 57.1252 36.8748 65.3333 47 65.3333Z";
 
   return (
     <header className="z-50 w-full font-Inconsolata mt-[3vh] fixed top-0 h-[10vh]">
@@ -123,8 +120,3 @@ const Header: FC = () => {
 };
 
 export default Header;
-  // <ul className="hidden md:flex items-center gap-4">
-  //                 {navItems.map(({label}) => (
-  //                   <Link className="text-[#25334D]" href="" key={label}>{label}</Link>
-  //                 ))}
-  //               </ul>

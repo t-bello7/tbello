@@ -23,7 +23,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
          <Header />
-         <div className="pt-[15vh] h-[100vh]">
+         <div className="pt-[12vh] h-[100vh]">
             {children}
          </div>
         <Footer />    

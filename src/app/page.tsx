@@ -1,10 +1,10 @@
 import {
-  Header,
+  // Header,
   Hero,
-  Intro,
-  Projects, 
-  Testimonials,
-  Footer
+  // Intro,
+  // Projects, 
+  // Testimonials,
+  // Footer
 } from "@/sections";
 export default function Home() {
   return(

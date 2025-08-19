@@ -7,9 +7,9 @@ gsap.registerPlugin(useGSAP);
 
 const Hero: FC = () => {
   const [coords, setCoords] = useState({ xMapped: 0, yMapped: 0 });
-  const windowWidthRef = useRef(window.innerWidth);
-  const windowHeightRef = useRef(window.innerHeight);
-  const pointerRef = useRef()
+  const windowWidthRef = useRef(0);
+  const windowHeightRef = useRef(0);
+  // const pointerRef = useRef()
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -50,8 +50,8 @@ const Hero: FC = () => {
 
     window.addEventListener("mousemove", updateMouseCoords);
     window.addEventListener("resize", handleResize);
- // Pointer element
-  const pointer = document.querySelector(".pointer"); // Make sure you have an element with class "pointer"
+//  // Pointer element
+//   const pointer = document.querySelector(".pointer"); // Make sure you have an element with class "pointer"
 
   // GSAP move logic
   function movePointer() {
@@ -76,7 +76,7 @@ const Hero: FC = () => {
         <div className=" space-y-4">
           <div> Oluwatomisin Bello <span> Software Engineer</span></div>
           <p> A design focused Software Engineer focused on creating stuning professionally crafted website </p>
-          <h1 className="text-5xl font-Paytone"> Let's Create Magic together</h1>
+          <h1 className="text-5xl font-Paytone"> Let&apos;s Create Magic together</h1>
         </div>
         <div className="absolute max-w-2xl mx-auto lg:mx-0 bottom-[15vh] left-1/2 -translate-x-1/2">
           

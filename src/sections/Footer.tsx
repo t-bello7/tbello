@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 const Footer: FC = () => {
@@ -7,7 +6,9 @@ const Footer: FC = () => {
     <div className="bg-[#101E38] pt-10 pb-5 space-y-4">
       <ul className="flex justify-between container mx-auto lg:hidden">
         <li>
+          <Link href={"/about-me"}>
           About Me
+          </Link>
         </li>
         <li>
           <Link href={"/selected-works"}>
