@@ -38,7 +38,7 @@ const AboutMe = () => {
       </div>
     <div>
       <h1 className="font-extrabold text-3xl leading-loose">Work Experience</h1>
-      <Link href="https://www.linkedin.com/in/tbello/" className="font-semibold"> Linkedin </Link>
+      <Link href="https://www.linkedin.com/in/tbello7/" className="font-semibold"> Linkedin </Link>
         <div>
             
         </div>
