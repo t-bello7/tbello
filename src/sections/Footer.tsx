@@ -14,7 +14,7 @@ const Footer: FC = () => {
         <div className=" top-[calc(100vh-60vh)] h-[60vh] pt-10 pb-5 space-y-4 sticky ">
             <div className="container max-w-[95%] space-y-8">
             <div className="flex items-center">
-              <h2 className="font-Paytone font-bold text-3xl"> Let's Create Magic Together</h2>
+              <h2 className="font-Paytone font-bold text-3xl"> Let&apos;`s Create Magic Together</h2>
               <hr className="border-t border-white mx-4 w-full" />
               <Button variant="secondary" className="flex text-black flex-row"
               iconAfter={

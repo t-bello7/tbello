@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Lenis from 'lenis';
@@ -25,13 +25,14 @@ export default function RootLayout({
     });
 
 
-    function raf(time: any) {
-
-      lenis.raf(time)
-
-      requestAnimationFrame(raf)
-
+    interface RafFunction {
+      (time: number): void;
     }
+
+    const raf: RafFunction = function (time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
 
 
     requestAnimationFrame(raf)

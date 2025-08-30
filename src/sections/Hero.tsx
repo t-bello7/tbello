@@ -83,13 +83,13 @@ const Hero: FC = () => {
           <h1 className="font-Paytone font-bold text-4xl"> Oluwatomisin Bello </h1>
           <div> Software Engineer </div>
           <p>
-            "I builds scalable digital products using 
+            &ldquo;I builds scalable digital products using 
             <span className="text-primary-1"> JavaScript</span>, 
             <span className="text-primary-1"> TypeScript</span>, 
             <span className="text-primary-1"> React</span>, and 
             <span className="text-primary-1"> Node.js</span>. I help businesses and founders turn
             <span className="text-primary-1"> ideas</span> 
-            into <span className="text-primary-1">exceptional applications </span> that solve real-world problems."
+            into <span className="text-primary-1">exceptional applications </span> that solve real-world problems.&rdquo;
           </p>
           <div className="flex items-center gap-4 justify-center">
             <Link href="https://linkedin.com/in/tbello7">
