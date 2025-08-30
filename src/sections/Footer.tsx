@@ -47,7 +47,7 @@ const Footer: FC = () => {
       </div>
 
     </div>
-    <ul className="fixed bottom-2 w-full px-4 mt-4 flex justify-between  lg:hidden">
+    <ul className="fixed bottom-2 w-full px-4 mt-4 flex justify-between z-20 bg-[#101E38] lg:hidden">
               <li>
                 <Link href={"/about-me"} className="grid justify-items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-user-round-search-icon lucide-user-round-search">
