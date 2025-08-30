@@ -2,6 +2,9 @@
 import { FC, useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { twitter, linkedin } from "@/assets/icons";
+import Link from "next/link";
+import Image from "next/image";
 
 gsap.registerPlugin(useGSAP);
 
@@ -73,10 +76,29 @@ const Hero: FC = () => {
   return (
     <section className="h-full font-Inconsolata">
       <div className="container h-[77vh] overscroll-none mx-auto gap-8 text-center lg:text-left relative">
-        <div className=" space-y-4">
-          <div> Oluwatomisin Bello <span> Software Engineer</span></div>
+        <div className="space-y-6 mt-10">
+          {/* <div> Oluwatomisin Bello <span> Software Engineer</span></div>
           <p> A design focused Software Engineer focused on creating stuning professionally crafted website </p>
-          <h1 className="text-5xl font-Paytone"> Let&apos;s Create Magic together</h1>
+          <h1 className="text-5xl font-Paytone"> Let&apos;s Create Magic together</h1> */}
+          <h1 className="font-Paytone font-bold text-4xl"> Oluwatomisin Bello </h1>
+          <div> Software Engineer </div>
+          <p>
+            "I builds scalable digital products using 
+            <span className="text-primary-1"> JavaScript</span>, 
+            <span className="text-primary-1"> TypeScript</span>, 
+            <span className="text-primary-1"> React</span>, and 
+            <span className="text-primary-1"> Node.js</span>. I help businesses and founders turn
+            <span className="text-primary-1"> ideas</span> 
+            into <span className="text-primary-1">exceptional applications </span> that solve real-world problems."
+          </p>
+          <div className="flex items-center gap-4 justify-center">
+            <Link href="https://linkedin.com/in/tbello7">
+              <Image src={linkedin} alt="linkedin icon" />
+            </Link>  
+            <Link href="https://twitter.com/__tbello">
+              <Image src={twitter} alt="twitter icon" />
+            </Link>
+          </div>
         </div>
         <div className="absolute max-w-2xl mx-auto lg:mx-0 bottom-[15vh] left-1/2 -translate-x-1/2">
           

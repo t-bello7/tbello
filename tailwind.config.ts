@@ -30,10 +30,12 @@ const config: Config = {
                     DEFAULT: '#8E8E8E',
                     1: '#BFBFBF',
                     2: '#F6F6F6',
-                    3: '#f2f1f3'
+                    3: '#f2f1f3',
+                    4: '#D1D5DB'
                 },
                 primary: {
-                    DEFAULT: '#EBF6F6'
+                    DEFAULT: '#EBF6F6',
+                    1: '#3B82F6'
                 },
                 secondary: {
                     DEFAULT: '#EED741'
