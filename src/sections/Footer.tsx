@@ -7,11 +7,11 @@ const Footer: FC = () => {
   return (<footer className=" grid items-end text-white bg-[#101E38]"
 
   >
-    <div className="h-[60vh] relative w-full "
+    <div className="h-[70vh] relative w-full "
        style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
     >
-    <div className="relative h-[calc(100vh+60vh)] -top-[100vh]">
-        <div className=" top-[calc(100vh-60vh)] h-[60vh] pt-10 pb-5 space-y-4 sticky ">
+    <div className="relative h-[calc(100vh+70vh)] -top-[100vh]">
+        <div className=" top-[calc(100vh-70vh)] h-[60vh] pt-10 pb-5 space-y-4 sticky ">
             <div className="container max-w-[95%] space-y-8">
             <div className="flex items-center">
               <h2 className="font-Paytone font-bold text-3xl"> Let&apos;`s Create Magic Together</h2>
