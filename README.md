@@ -2,7 +2,7 @@
 
 ## Resources
 * [Prod Link](https://jitter.video)
-* [Figma Link](https://www.figma.com/design/OIZURA13blGekhBzJZ86wl/Tomi-s-project?node-id=0-1&t=PA5W9oVoDSfRL6Vt-1)
+* [Figma Link](https://www.figma.com/design/J59XTMaC3HpB96XZtoCaWf/Tomi-s-Portfolio-Dsn?node-id=0-1&t=FeTgsAFEafytlgx2-1)
 
 ## Getting Started
 Follow these steps to start the application locally:

@@ -1,6 +1,56 @@
+import Image from "next/image";
 import Link from "next/link";
+import {
+    bglogo,
+    aiicoLogo,
+    extendedLogo,
+    hngLogo
+} from "@/assets/images"
 
 const AboutMe = () => {
+  const workExperience = [
+    {
+      id: "rwwrwr",
+      title: "Software Developer",
+      company: "Babbangona",
+      startDate: "February 2024",
+      endDate: "Present",
+      description: "Developing and maintaining web applications.",
+      image: bglogo,
+      liveUrl: "https://babbangona.com"
+    },
+    {
+      id: "rwwr",
+      title: "Frontend Developer",
+      company: "Extended Networks",
+      startDate: "September 2023",
+      endDate: "December 2023",
+      description: "Building user interfaces and improving user experience.",
+      image: extendedLogo,
+      liveUrl: "https://extendednetworks.net"
+    },
+    {
+      id: "qeqe",
+      title: "Frontend Intern",
+      company: "Hotels.ng Internship",
+      startDate: "Jan 2017",
+      endDate: "Dec 2017",
+      description: "Assisting in the development of web applications.",
+      image: hngLogo,
+      liveUrl: "https://hng.tech/"
+    },
+    {
+      id: "qeq",
+      title: "IT Support",
+      company: "AIICO insurance company",
+      startDate: "Jan 2016",
+      endDate: "Dec 2016",
+      description: "Providing technical support and troubleshooting.",
+      image: aiicoLogo,
+      liveUrl: "https://www.aiicoplc.com/"
+    }
+  ]
+
   return (
     <div className="container font-Inconsolata mx-auto max-w-[95%] ">
       {/* style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"÷ */}
@@ -40,7 +90,20 @@ const AboutMe = () => {
       <h1 className="font-extrabold text-3xl leading-loose">Work Experience</h1>
       <Link href="https://www.linkedin.com/in/tbello7/" className="font-semibold"> Linkedin </Link>
         <div>
-            
+            {
+              workExperience.map(({
+                title, company, startDate, endDate, description, image, liveUrl
+              }) => (
+                <div key={title}>
+                  <Image src={image} alt={title} className="w-full h-48 object-cover" />
+                  <h2 className="font-bold text-xl">{title}</h2>
+                  <p className="text-gray-600">{company}</p>
+                  <p className="text-gray-500">{startDate} - {endDate}</p>
+                  <p className="mt-2">{description}</p>
+                  <Link href={liveUrl} className="text-blue-500 hover:underline">View Project</Link>
+                </div>
+              ))
+            }
         </div>
     </div>
     </div>

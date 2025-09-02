@@ -47,7 +47,7 @@ const Footer: FC = () => {
       </div>
 
     </div>
-    <ul className="fixed bottom-2 w-full px-4 mt-4 flex justify-between z-20 bg-[#101E38] lg:hidden">
+    <ul className="fixed bottom-2 w-full px-4 mt-4 flex justify-center gap-8 z-20 bg-[#101E38] lg:hidden">
               <li>
                 <Link href={"/about-me"} className="grid justify-items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-user-round-search-icon lucide-user-round-search">
@@ -71,7 +71,7 @@ const Footer: FC = () => {
                   Selected works
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href={"/experiments"} className="grid justify-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-flask-conical-icon lucide-flask-conical">
                     <path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/>
@@ -86,7 +86,7 @@ const Footer: FC = () => {
                 </svg>
                 Writing
                 </Link>
-              </li>
+              </li> */}
 
             </ul>
   </footer>);

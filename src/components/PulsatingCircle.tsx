@@ -12,7 +12,7 @@ export const PulsatingCircle = ({
     // Size configurations
     const sizeConfig = {
         small: {
-            container: "size-12", // reduced from size-20
+            container: "size-8", // reduced from size-20
             outer: "inset-1", // reduced from inset-2
             inner: "inset-3" // reduced from inset-6
         },
