@@ -75,7 +75,7 @@ const Hero: FC = () => {
 
   return (
     <section className="h-full font-Inconsolata">
-      <div className="container h-[77vh] overscroll-none mx-auto gap-8 text-center lg:text-left relative">
+      <div className="container h-[77vh] lg:h-[70vh] overscroll-none mx-auto gap-8 text-center grid lg:text-left relative lg:grid lg:grid-cols-2 lg:items-center">
         <div className="space-y-6 mt-10">
           {/* <div> Oluwatomisin Bello <span> Software Engineer</span></div>
           <p> A design focused Software Engineer focused on creating stuning professionally crafted website </p>
@@ -100,8 +100,7 @@ const Hero: FC = () => {
             </Link>
           </div>
         </div>
-        <div className="absolute max-w-2xl mx-auto lg:mx-0 bottom-[15vh] left-1/2 -translate-x-1/2">
-          
+        <div className="max-w-2xl mx-auto lg:mx-0 lg:justify-self-center">
           <svg className="w-[20ch] h-[20vh]" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
               {/* Background color */}
               <path d="M500 0V500H0V0H500Z" fill="#D95CFA"/>

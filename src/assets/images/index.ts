@@ -9,6 +9,7 @@ import bglogo from '@/assets/images/bg-logo.svg'
 import aiicoLogo from '@/assets/images/aiico_insurance_plc_logo.jpg'
 import extendedLogo from '@/assets/images/extended-logo.png'
 import hngLogo from '@/assets/images/hng-logo.svg'
+import tomiImage from '@/assets/images/tomi.png'
 
 export {
     dnaLogo,
@@ -21,5 +22,6 @@ export {
     bglogo,
     aiicoLogo,
     extendedLogo,
-    hngLogo
+    hngLogo,
+    tomiImage
 }
