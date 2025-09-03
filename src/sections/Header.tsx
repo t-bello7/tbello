@@ -112,7 +112,9 @@ const Header: FC = () => {
               </motion.svg>
 
             </button> */}
-            <Button variant="secondary">Say Hello </Button>    
+            <Link href="https://calendly.com/bello4aus/30min" target="_blank" rel="noreferrer">
+              <Button variant="secondary">Say Hello </Button>
+            </Link>
           </div>
       </div>
     </header>
