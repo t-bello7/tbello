@@ -1,38 +1,69 @@
 "use client"
 import { FC } from "react";
 import Link from "next/link";
-import { Button } from "@/components";
 
 const Footer: FC = () => {
-  return (<footer className="text-white bg-[#101E38]"
-
-  >
-    <div className="h-[70vh] relative w-full"
-       style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
-    >
-    <div className="relative h-[calc(100vh+70vh)] -top-[100vh] will-change-transform">
-        <div className="top-[calc(100vh-70vh)] h-[70vh] pt-10 pb-5 space-y-4 sticky will-change-transform">
-            <div className="container max-w-[95%] space-y-8">
-            <div className="flex items-center">
-              <h2 className="font-Paytone font-bold text-3xl"> Let&apos;`s Create Magic Together</h2>
-              <hr className="border-t border-white mx-4 w-full" />
-              <Button variant="secondary" className="flex text-white bg-[#101E38] flex-row"
-              iconAfter={
-                  <svg width="20" height="20" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M26.455 34.5033C26.1067 34.5033 25.7583 34.375 25.4833 34.1C24.9517 33.5683 24.9517 32.6883 25.4833 32.1566L35.64 22L25.4833 11.8433C24.9517 11.3116 24.9517 10.4316 25.4833 9.89997C26.015 9.3683 26.895 9.3683 27.4267 9.89997L38.555 21.0283C39.0867 21.56 39.0867 22.44 38.555 22.9716L27.4267 34.1C27.1517 34.375 26.8033 34.5033 26.455 34.5033Z" fill="#292D32"/>
-                <path d="M37.2716 23.375H6.41663C5.66496 23.375 5.04163 22.7517 5.04163 22C5.04163 21.2483 5.66496 20.625 6.41663 20.625H37.2716C38.0233 20.625 38.6466 21.2483 38.6466 22C38.6466 22.7517 38.0233 23.375 37.2716 23.375Z" fill="#292D32"/>
-                </svg>
-              }
-              >
-                  Contact Me
-              </Button>
+  return (
+    <footer className="text-white bg-[#101E38]" id="contact">
+      <div className="container max-w-[95%] py-12 md:py-16">
+        <div
+          id="contact"
+          className="scroll-mt-[12vh] flex flex-col gap-10 md:grid md:grid-cols-[1.4fr_1fr] md:items-start"
+        >
+          <div className="rounded-3xl bg-white/95 p-6 text-slate-900 md:p-10">
+            <div className="text-center space-y-2">
+              <h2 className="font-Paytone text-3xl md:text-4xl">Want to get in touch?</h2>
+              <p className="font-Paytone text-3xl md:text-4xl">Drop me a line</p>
             </div>
-            <div className="font-Inconsolata space-y-8">
-              <div className="space-y-4">
-                <h4 className="uppercase text-gray-4"> / REACH ME </h4>
-                <Link href={"mailto:bello4aus@outlook.com"} className="ml-4 block">bello4aus@outlook.com</Link>
+
+            <form className="mt-10 space-y-6">
+              <div className="grid gap-6 md:grid-cols-2">
+                <label className="space-y-2 text-sm font-semibold">
+                  <span>Name</span>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-slate-400 focus:ring-2 focus:ring-slate-200"
+                  />
+                </label>
+                <label className="space-y-2 text-sm font-semibold">
+                  <span>Email Address</span>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-slate-400 focus:ring-2 focus:ring-slate-200"
+                  />
+                </label>
               </div>
-              <div className="space-y-4">
+              <label className="space-y-2 text-sm font-semibold">
+                <span>Message</span>
+                <textarea
+                  rows={6}
+                  placeholder="Enter your message"
+                  className="w-full resize-none rounded-2xl border border-slate-200 px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-slate-400 focus:ring-2 focus:ring-slate-200"
+                />
+              </label>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="rounded-full bg-slate-900 px-10 py-3 text-base font-semibold text-white shadow-[0_20px_40px_rgba(0,0,0,0.18)] transition hover:bg-slate-800"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <aside className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
+            <h3 className="font-Paytone text-xl">Contact</h3>
+            <div className="font-Inconsolata mt-6 space-y-6">
+              <div className="space-y-3">
+                <h4 className="uppercase text-gray-4"> / REACH ME </h4>
+                <Link href={"mailto:bello4aus@outlook.com"} className="ml-4 block">
+                  bello4aus@outlook.com
+                </Link>
+              </div>
+              <div className="space-y-3">
                 <h4 className="uppercase text-gray-4"> / CHECK me out </h4>
                 <div className="grid ml-4 gap-2">
                   <Link href={"https://linkedin.com/in/tbello7"}>LINKEDIN</Link>
@@ -42,54 +73,11 @@ const Footer: FC = () => {
                 </div>
               </div>
             </div>
-            </div>
+          </aside>
         </div>
       </div>
-
-    </div>
-    <ul className="fixed bottom-2 w-full px-4 mt-4 flex justify-center gap-8 z-20 bg-[#101E38] lg:hidden">
-              <li>
-                <Link href={"/about-me"} className="grid justify-items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-user-round-search-icon lucide-user-round-search">
-                    <circle cx="10" cy="8" r="5"/>
-                    <path d="M2 21a8 8 0 0 1 10.434-7.62"/>
-                    <circle cx="18" cy="18" r="3"/>
-                    <path d="m22 22-1.9-1.9"/>
-                </svg>
-              
-                About Me
-                </Link>
-              </li>
-              <li>
-                <Link href={"/selected-works"} className="grid justify-items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-briefcase-business-icon lucide-briefcase-business">
-                          <path d="M12 12h.01"/>
-                          <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
-                          <path d="M22 13a18.15 18.15 0 0 1-20 0"/>
-                          <rect width="20" height="14" x="2" y="6" rx="2"/>
-                      </svg>
-                  Selected works
-                </Link>
-              </li>
-              {/* <li>
-                <Link href={"/experiments"} className="grid justify-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-flask-conical-icon lucide-flask-conical">
-                    <path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/>
-                    <path d="M6.453 15h11.094"/><path d="M8.5 2h7"/>
-                </svg>
-                Experiments
-                </Link>
-              </li>
-              <li>
-                <Link href={"/experiments"} className="grid justify-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-book-open-text-icon lucide-book-open-text"><path d="M12 7v14"/><path d="M16 12h2"/><path d="M16 8h2"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/><path d="M6 12h2"/><path d="M6 8h2"/>
-                </svg>
-                Writing
-                </Link>
-              </li> */}
-
-            </ul>
-  </footer>);
+    </footer>
+  );
 };
 
 export default Footer;

@@ -94,5 +94,11 @@
     @apply bg-background text-foreground;}
   html {
     overflow-x: hidden;
-    overflow-y: auto;}}
+    overflow-y: auto;
+    scroll-behavior: smooth;}
 
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }}

@@ -48,7 +48,7 @@ const SelectedWorks = () => {
       <div className="pt-6 md:pt-12">
         <SectionTitle text="Selected Works" />
         <p className="max-w-2xl font-Inconsolata text-sm md:text-base text-slate-600">
-          A curated look at the products, experiments, and platforms I have helped
+          A curated look at the products I have helped
           bring to life. The layout keeps the focus on the story while the visuals
           do the heavy lifting.
         </p>
