@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 import { Button } from "@/components";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import Rive from '@rive-app/react-webgl2';
+
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const navItems = [
   {
@@ -57,6 +59,12 @@ const Header: FC = () => {
       <div className="container w-[95%] md:max-w-[80%] lg:max-w-[80%]">
           <div className="flex justify-center items-center w-full relative">
             <nav className="hidden lg:flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 shadow-[0_10px_30px_rgba(0,0,0,0.12)] ring-1 ring-black/5 backdrop-blur-sm">
+            {/* <div className="bg-black w-11"> */}
+              <Rive
+                src="/logo.riv"
+                stateMachines="bumpy"
+              />
+              {/* </div> */}
               {navItems.map((item) => (
                 <Link
                   key={item.label}

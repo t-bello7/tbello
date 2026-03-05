@@ -16,12 +16,18 @@ const Footer: FC = () => {
               <p className="font-Paytone text-3xl md:text-4xl">Drop me a line</p>
             </div>
 
-            <form className="mt-10 space-y-6">
+            <form
+              className="mt-10 space-y-6"
+              action="https://formspree.io/f/mwkywooe"
+              method="POST"
+            >
               <div className="grid gap-6 md:grid-cols-2">
                 <label className="space-y-2 text-sm font-semibold">
                   <span>Name</span>
                   <input
                     type="text"
+                    name="name"
+                    autoComplete="name"
                     placeholder="Enter your name"
                     className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-slate-400 focus:ring-2 focus:ring-slate-200"
                   />
@@ -30,6 +36,8 @@ const Footer: FC = () => {
                   <span>Email Address</span>
                   <input
                     type="email"
+                    name="email"
+                    autoComplete="email"
                     placeholder="Enter your email"
                     className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-slate-400 focus:ring-2 focus:ring-slate-200"
                   />
@@ -39,6 +47,7 @@ const Footer: FC = () => {
                 <span>Message</span>
                 <textarea
                   rows={6}
+                  name="message"
                   placeholder="Enter your message"
                   className="w-full resize-none rounded-2xl border border-slate-200 px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-slate-400 focus:ring-2 focus:ring-slate-200"
                 />
