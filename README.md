@@ -61,3 +61,7 @@ Breathe Life. Give Hope. Join Us Today.
 For more information, visit [Website] or contact us at [Email/Phone Number].
 
 This profile can be customized further with specific details about your NGO's achievements, team, and partnerships. Let me know if you'd like to refine it further!
+
+
+TBELLO LOGO DETAILS 
+- FONT: 

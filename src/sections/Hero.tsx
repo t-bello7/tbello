@@ -84,11 +84,10 @@ const Hero: FC = () => {
           <div> Software Engineer </div>
           <p>
             &ldquo;I builds scalable digital products using 
-            <span className="text-primary-1"> JavaScript</span>, 
             <span className="text-primary-1"> TypeScript</span>, 
             <span className="text-primary-1"> React</span>, and 
-            <span className="text-primary-1"> Node.js</span>. I help businesses and founders turn
-            <span className="text-primary-1"> ideas</span> 
+            <span className="text-primary-1"> Java</span>. I help businesses and founders turn
+            <span className="text-primary-1"> ideas </span> 
             into <span className="text-primary-1">exceptional applications </span> that solve real-world problems.&rdquo;
           </p>
           <div className="flex items-center gap-4 justify-center">

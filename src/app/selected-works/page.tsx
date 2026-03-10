@@ -49,8 +49,7 @@ const SelectedWorks = () => {
         <SectionTitle text="Selected Works" />
         <p className="max-w-2xl font-Inconsolata text-sm md:text-base text-slate-600">
           A curated look at the products I have helped
-          bring to life. The layout keeps the focus on the story while the visuals
-          do the heavy lifting.
+          bring to life. Each project reflects a commitment to solving real problems with thoughtful design and technology.
         </p>
       </div>
 
