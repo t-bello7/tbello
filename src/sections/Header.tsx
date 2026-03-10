@@ -1,13 +1,18 @@
 "use client"
-import { FC, useState } from "react";
+import { FC, ReactNode, useState } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import Logo from "@/assets/images/tb-logo.png";
 import Image from "next/image";
 
-/* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-const navItems = [
+type NavItem = {
+  label: ReactNode;
+  href: string;
+  external?: boolean;
+};
+
+const navItems: NavItem[] = [
   {
     label: <Image src={Logo} alt="Home" width={100} />,
     href: "/",
@@ -19,11 +24,6 @@ const navItems = [
   {
     label: "Work",
     href: "/selected-works",
-  },
-  {
-    label: "LinkedIn",
-    href: "https://linkedin.com/in/tbello7",
-    external: true,
   },
   {
     label: "Get in touch",
