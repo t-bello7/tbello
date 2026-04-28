@@ -92,8 +92,8 @@ const Header: FC = () => {
                 </div>
               </div>
             ) : null}
-              <div className="flex gap-4 items-center">
-                    <button className="w-4 h-4" type="button" onClick={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}>
+              <div className="hidden lg:flex gap-4 items-center">
+                    <button className="h-4 w-4" type="button" onClick={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}>
               <motion.svg  viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
               
                 <motion.path
